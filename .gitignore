@@ -11,3 +11,9 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+# exclude raw data directory
+/UCI HAR Dataset
+
+# ignore raw data zip file
+*.zip
