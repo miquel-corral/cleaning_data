@@ -4,7 +4,7 @@ This CodeBook is intended to describe the data and the processing done to achiev
 
 ## Raw data
 
-The data used in this assignment represents data collected from the accelerometers from the Samsing Galaxy S smartphone. A full desription is available at the site where the data was obtained:
+The data used in this assignment represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
@@ -18,7 +18,7 @@ The data used in this assignment represents data collected from the acceleromete
 
 - 'activity_labels.txt': Links the class labels with their activity name.
 
-- train and set folders containing files and folders for train and test datasets originated for two different gropus of subjects in the experiment. Their descriptions are equivalent:
+- 'train' and 'test' folders contain files and folders for train and test datasets originated for two different gropus of subjects in the experiment. Their descriptions are equivalent:
 
 - 'train/X_train.txt': Training set.
 
