@@ -50,7 +50,30 @@ So, the files included into the test/Inertial Signals/ and train/Inertial Signal
 ## The processing of data
 
 1. First step was to load different datasets and analyze them to see the possibilities of merging them, and actually merge them. At the same time we started to apply some additional processing to obtain a merged dataset neater than the originals:
-1. Merge subjects
-2. Merge activities and set activities description names from the activities descriptions file.
-3. Merge measurements and features names according to the features descriptions file.
+  1. Merge subjects
+  2. Merge activities and set activities description names from the activities descriptions file (setting the names could have been done later, but I found easier to do it at this step)
+  3. Merge measurements and features names according to the features descriptions file.
+  4. Merge the three previous dataset to get all variables together.
 
+2. Second step was subset the previous dataset with all measurements to get a subset with the measurements related to mean and standard deviation. This was done according to the variable column names that were loaded from the features file.
+
+3. Third step was to set human readable names to the measurement variables according to the detailed descriptions given in the file 'features_info.txt'.
+
+4. Fourth and last step was the generation of a tidy dataset with the average of each variable for each activity and subject. This was done through the functions available in the dplyr package. 
+
+All this processing is coded and described in comments in the run_analysis.R script. The result of the execution of the script is saved into a file named 'my_tidy_dataset.txt'
+
+## The dity dataset
+
+The result dataset, according to the assignment statement, is a dataset containing the average of each variable for each activity and subject. It has 35 obs. of 81 variables.
+
+The first variable correspond to subjects identifies that are ranged from 1 to 30.
+
+The second variable corrspond to the 6 activities that are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
+
+The rest of the variables are, for each subject and activity, the average or standard deviation of the measurements done upon the frequency and time signals of the accelerometer (acceleration signal) and gyroscope (gravity signal) of the smartphones carried by the subjects while executing the different activities.
+
+Each column name describe if the measurements are of frequency or time, if the measurements are of the gravity or the body acceleration, from the accelerometer or the gyroscope and if it they are mean or standard deviation.
+
+Acceleration measurements are in standard gravitational units 'g'.
+The angular velocity measurements from the gyroscope are in radians/second.
