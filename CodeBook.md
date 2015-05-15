@@ -79,3 +79,5 @@ Each column name describe if the measurements are of frequency or time, if the m
 
 Acceleration measurements are in standard gravitational units 'g'.
 The angular velocity measurements from the gyroscope are in radians/second.
+
+*Note*: All measurements from raw data are normalized and bounded within [-1,1]
