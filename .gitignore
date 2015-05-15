@@ -17,3 +17,13 @@ vignettes/*.pdf
 
 # ignore raw data zip file
 *.zip
+
+# ignore txt files
+*.txt
+
+# exclude test and train folders
+/train
+/test
+
+# exclude .DS_Store
+.DS_Store
